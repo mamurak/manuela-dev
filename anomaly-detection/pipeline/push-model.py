@@ -22,7 +22,7 @@ ops_repo_location = f'{git_server_url}/{git_user}/industrial-edge.git'
 ops_repo_url = (
     f'http://{git_user}:{git_password}@{ops_repo_location.lstrip("http://")}'
 )
-model_artifact_id = 'model.joblib'
+model_artifact_id = f'model-{timestamp}.joblib'
 
 
 print(f'Uploading model to bucket {s3_bucket_name}'
